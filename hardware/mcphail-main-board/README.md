@@ -63,6 +63,18 @@ The GPS is accessible on the Rx/Tx lines so you can query
 using AT commands and get the values back. No additional
 pins are necessary.
 
+### Microcontroller
+
+Atmel AVR chips aren't going to have the ADC resolution we want.
+
+The paper calls for a 14-bit ADC. Probably best to just switch to the MSP432 or a similar chip, could pick up a $14 dev board as well. This is a TI chip that requires CodeComposer Studio, newest version is CCSv6. It's Linux-compatible and I have a Windows machine just in case it's not.
+
+Need to go over the timing -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
+
+We may need need a 4-layer board, which doubles board cost. It's unclear if these guys are actually getting and using all 14 bits. Turning off everything but the ADC when sampling.
+
+[Discussion of cheap 16-bit ADC](http://www.avrfreaks.net/forum/cheap-16-bit-adc)
+
 ### RTC
 
 The DS1307 real time clock is out of date, replaced it with a MCP7940N. Needs some adjustment to the circuitry and crystal to minimize ppm (frequency tolerance) to minimize time slipping, which could be up to a few minutes per month in the worst case. 
