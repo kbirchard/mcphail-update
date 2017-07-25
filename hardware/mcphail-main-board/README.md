@@ -65,11 +65,17 @@ pins are necessary.
 
 ### Microcontroller
 
-Atmel AVR chips aren't going to have the ADC resolution we want.
+Atmel AVR chips aren't going to have the ADC resolution we want. The paper calls for a 14-bit ADC.
 
-The paper calls for a 14-bit ADC. Probably best to just switch to the MSP432 or a similar chip, could pick up a $14 dev board as well. This is a TI chip that requires CodeComposer Studio, newest version is CCSv6. It's Linux-compatible and I have a Windows machine just in case it's not.
+Solution 1: Switch to the $6 MSP432 or a similar chip, could pick up a $14 dev board as well. This is a TI chip that requires CodeComposer Studio, newest version is CCSv6. It's Linux-compatible and I have a Windows machine just in case it's not.
 
-Need to go over the timing -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
+The downside of the MSP432 is the $45 additional programmer we need to buy, getting set up with a new dev environment, etc. That's all doable but may not be necessary.  
+
+Solution 2: Use a $6 16-bit ADS1115 which receives on two differential or four single channels (we could use the four) and outputs the result over I2C to the Atmega32u4. 
+
+### ADC and Noise Notes
+
+I need to review their timing -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
 
 We may need need a 4-layer board, which doubles board cost. It's unclear if these guys are actually getting and using all 14 bits. Turning off everything but the ADC when sampling.
 
