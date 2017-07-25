@@ -25,6 +25,8 @@ Parallels the European [ENTOMATIC](https://www.upf.edu/web/entomatic/) project.
 - v2.x, switch to ARM MSP430 or other ADC-specific chip, collect data on SD card
 - v3.x, integrate mesh net or other networking, possibly more sophisticated offboard analysis
 
+\pagebreak
+
 ## Design Notes
 
 ### Physical Housing
@@ -81,17 +83,58 @@ X7R means a capacitor is a temperature-stable (EIA Class 2) cap which only varie
 
 C0G/NP0 means a capacitor is temperature-compensating (EIA Class 1) which varies less than ±0.3% C from -55°C to +125°C. Capacitance drift or hysteresis is less than ±0.05%. [ref](http://www.avx.com/products/ceramic-capacitors/surface-mount/c0g-np0-dielectric/)
 
+## Detector/Receiver Board
+
+Interestingly, the receiver part number [TEMD5080X01](https://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/TEMD5080X01/TEMD5080X01CT-ND/2747443?WT.srch=1&gclid=EAIaIQobChMI-f3J4Zml1QIV6wrTCh2xegkZEAAYAiAAEgK2kvD_BwE) does not have the same package as in the photos of the McPhail trap. These are $1.31 each at 25 and the design calls for ten of them. 
+
+They are good from -40C to 100C and are 5mm x 4.24mm. Ten of them would require a board about 3 inches long and about half an inch wide, or about $7 for a set of three from OSH Park.
+
+This is a $20 board. The stencil costs $5 from OSH Stencils.
+
+## Emitter Board
+
+Emitters are in the $2 range and the board will probably be the same size as the detector board. 
+
+The diffuser needs more investigation.
+
+This is also likely a $20 board. The stencil costs $5 from OSH Stencils.
+
+\pagebreak
+
 <!--- assy start --->
-## Assembly Information
+## Main Board Assembly Information
 
 The following layout is only to get a rough idea of how much area the parts would require if they were all on one side of one board. The area is 3 inches x 3 inches, or 9 square inches, and a set of three bare boards would cost $48.20 for three with a manufacturing turnaround of about ten days.
 
 Rough cost of parts for a single board is about $50. 
 
+The stencil from OSH Stencils costs $16.90. A tube of solder paste in the same package costs $14. 
+
+Stencils are 3mil-thick polyamide (orange) film which is reusable.
+
+Total cost for one complete stack of three boards: $129
+
+Assembling a further one complete stack of three boards: $93
+
+|Item|Cost|
+|----|----|
+|Emitter Board PCB|$3|
+|Emitter Parts|$13|
+|Emitter Stencil|$5|
+|Detector Board PCB|$3|
+|Detector Parts|$13|
+|Detector Stencil|$5|
+|Main Board PCB|$16|
+|Main Board Parts|$45|
+|Main Board Stencil|$17|
+|Leaded Solder|$14|
+
 <!--- assy end --->
 ![Assembly Diagram](assembly.png)
 
 ![Gerber Preview](preview.png)
+
+\pagebreak
 
 <!--- bom start --->
 ## Bill of Materials
