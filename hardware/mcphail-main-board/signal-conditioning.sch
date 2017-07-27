@@ -2028,4 +2028,6 @@ Wire Wire Line
 Wire Wire Line
 	3425 5425 3425 8125
 Connection ~ 3700 8125
+Text Notes 4200 1375 0    200  ~ 0
+SHEET 2: SIGNAL CONDITIONING
 $EndSCHEMATC

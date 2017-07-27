@@ -444,7 +444,7 @@ F 8 "SS12-E3/61TGICT-ND" H 3475 1925 50  0001 C CIN "S1_PN"
 	1    3475 2275
 	1    0    0    1   
 $EndComp
-Text Notes 4150 2125 0    50   ~ 0
+Text Notes 4150 2275 0    50   ~ 0
 IF VIN EXISTS,\nVCC = VIN (5V-9V)\n\nIF VIN REMOVED,\nVCC = VBAT (3.0V-4.2V)\n\nSEL set to USB\n500mA charge limit\n\n~TE~ low, enables \nsafety timer
 $Comp
 L IC-REG-LDO-3.3V-0.25A-MCP1703-SOT23A-3 U11
@@ -987,4 +987,6 @@ F 3 "" H 6450 3400 50  0000 C CNN
 	1    6250 3400
 	0    1    1    0   
 $EndComp
+Text Notes 1300 1100 0    200  ~ 0
+SHEET 4: POWER INPUT
 $EndSCHEMATC
