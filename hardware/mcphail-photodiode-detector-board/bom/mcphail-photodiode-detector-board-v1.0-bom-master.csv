@@ -1,0 +1,3 @@
+Ref,Qty,Footprint,Footprint Library,Symbol,Symbol Library,Datasheet,MF_Name,MF_PN,S1_Name,S1_PN,Type
+J1,1,CONN-HEADER-STRAIGHT-P2.54MM-1x02,Wickerlib,HEADER-MALE-2POS-TH-1x02-P0.1IN,wickerlib,https://cdn.harwin.com/pdfs/60page140.pdf,Harwin,M20-9990246,Digikey,952-2262-ND,
+LED1 LED10 LED2 LED3 LED4 LED5 LED6 LED7 LED8 LED9,10,TEMD5110X01,Wickerlib,PHOTODIODE-IR-940NM-SMD-TEMD5110X01,wickerlib,http://www.vishay.com/docs/84658/temd5110.pdf,Vishay,TEMD5110X01,Digikey,751-1048-1-ND,
