@@ -1,0 +1,23 @@
+{
+    "author":"Jenner Hanni",
+    "bom_dir":"bom",
+    "company":"Wickerbox Electronics",
+    "date_create":"06 Aug 2017",
+    "date_update":"06 Aug 2017",
+    "description":"Part of the McPhail Trap design",
+    "email":"jenner@wickerbox.net",
+    "gerbers_dir":"gerbers",
+    "lib_dir":"/home/wicker/wickerlib/libraries",
+    "license":"CERN Open Hardware License v1.2",
+    "projname":"mcphail-ir-emitter-board",
+    "template_dir":"/home/wicker/wickerlib/templates",
+    "template_kicad":"wickerbox-2layer",
+    "template_latex":"breakout.tex",
+    "title":"McPhail IR Emitter Board",
+    "version":"1.0",
+    "website":"http://wickerbox.net",
+    "width_assembly_png":"70",
+    "width_other_png":"60",
+    "width_preview_png":"90",
+    "width_schematic_png":"90"
+}
