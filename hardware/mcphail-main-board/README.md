@@ -2,7 +2,7 @@
 # McPhail Trap Main Board v1.0
 Collect, analyze, and report back environmental data.
 
-Updated: 3 Aug 2017
+Updated: 6 Aug 2017
 - Author: Jenner Hanni
 - Website: http://wickerbox.net
 - Company: Wickerbox Electronics
