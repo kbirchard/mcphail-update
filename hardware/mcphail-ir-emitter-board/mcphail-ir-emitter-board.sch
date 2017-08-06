@@ -1,5 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:wickerlib
+LIBS:mcphail-ir-emitter-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -206,7 +207,7 @@ U 1 1 5987C401
 P 2475 3850
 F 0 "J1" H 2375 4000 50  0000 L CNN
 F 1 "TO MCU" H 2375 3700 50  0000 L CNN
-F 2 "CONN-1x02-2.54MM-TH" H 2475 3500 50  0001 C CIN
+F 2 "Wickerlib:CONN-HEADER-STRAIGHT-P2.54MM-1x02" H 2475 3500 50  0001 C CIN
 F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2425 3850 5   0001 C CNN
 F 4 "HEADER MALE 2POS TH 1x02 0.1IN" H 2475 3500 50  0001 C CIN "Description"
 F 5 "Harwin" H 2475 3500 50  0001 C CIN "MF_Name"
