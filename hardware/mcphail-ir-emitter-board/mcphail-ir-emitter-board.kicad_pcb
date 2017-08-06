@@ -3,9 +3,9 @@
   (general
     (links 11)
     (no_connects 0)
-    (area 101.523799 76.123799 170.256201 88.976201)
+    (area 101.005048 74.854999 178.510001 123.265001)
     (thickness 1.6)
-    (drawings 24)
+    (drawings 26)
     (tracks 43)
     (zones 0)
     (modules 11)
@@ -40,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.254)
     (user_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.3302)
@@ -432,6 +432,12 @@
       (net 1 "Net-(J1-Pad1)"))
   )
 
+  (gr_text - (at 104.14 86.995) (layer F.Fab) (tstamp 59874F34)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text + (at 104.14 77.47) (layer F.Fab) (tstamp 59874F33)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
   (gr_text "940nm IR Emitter Board v1.0" (at 137.795 78.105) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.1524)))
   )

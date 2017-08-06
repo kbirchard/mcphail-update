@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/wicker/proj/McPhail-Trap/hardware/mcphail-ir-emitter-board/mcphail-ir-emitter-board.sch)
-    (date "Sun 06 Aug 2017 10:04:17 AM PDT")
+    (date "Sun 06 Aug 2017 10:13:49 AM PDT")
     (tool "Eeschema 4.0.5-e0-6337~49~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
