@@ -1,7 +1,7 @@
-Individual Placements per board: 74
+Individual Placements per board: 76
 
-Number of Parts: 138
+Number of Parts: 143
 
 
-Board size is 2.75 x 4.20 inches (69.85 x 106.68 mm)
+Board size is 3.17 x 2.23 inches (80.64 x 56.63 mm)
 

@@ -1,5 +1,5 @@
 Drill report for mcphail-main-board.kicad_pcb
-Created on Thu Jul 27 13:02:09 2017
+Created on Thu Aug  3 12:45:45 2017
 
 Copper Layer Stackup:
     =============================================================
@@ -10,13 +10,14 @@ Copper Layer Stackup:
 Drill file 'mcphail-main-board.drl' contains
     plated through holes:
     =============================================================
-    T1  0.76mm  0.030"  (16 holes)
-    T2  0.80mm  0.031"  (2 holes)
-    T3  1.02mm  0.040"  (26 holes)
-    T4  1.20mm  0.047"  (2 holes)
-    T5  3.00mm  0.118"  (3 holes)
+    T1  0.33mm  0.013"  (92 holes)
+    T2  0.76mm  0.030"  (16 holes)
+    T3  0.80mm  0.031"  (4 holes)
+    T4  1.02mm  0.040"  (17 holes)
+    T5  1.20mm  0.047"  (2 holes)
+    T6  3.00mm  0.118"  (3 holes)
 
-    Total plated holes count 49
+    Total plated holes count 134
 
 
 Not plated through holes are merged with plated holes
