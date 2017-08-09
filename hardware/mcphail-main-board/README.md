@@ -2,7 +2,7 @@
 # McPhail Trap Main Board v1.0
 Collect, analyze, and report back environmental data.
 
-Updated: 6 Aug 2017
+- Updated: 9 Aug 2017
 - Author: Jenner Hanni
 - Website: http://wickerbox.net
 - Company: Wickerbox Electronics
@@ -34,6 +34,14 @@ Parallels the European [ENTOMATIC](https://www.upf.edu/web/entomatic/) project.
 Putting the electronics in acrylic separate from the insects so the ultrasonic isn't bothering them. An acrylic housing placed on top of the trap provides protection from the elements as well as protects the insects from any electronics noise. 
 
 If all circuitry is on the board at the top, the IR emitters and photodiode detectors can be the only items in the trap with the insects and be connected by a minimum of cabling. 
+
+**Board dimensions**
+
+|Board|Dimensions|
+|-----|----------|
+|Emitter Board|2.71x0.51 inches (68.76x12.88mm)|
+|Detector Board|2.71x0.51 inches (68.76x12.88mm)|
+|Main Board|3.18x2.24 inches (80.82x56.79mm)|
 
 ### Security and Connectivity Platforms for reference
 
@@ -188,7 +196,7 @@ Assembling a further one complete stack of three boards: $93
 |J6|1|HEADER FEMALE 6POS 2x3 0.1IN|A30729CT-ND|
 |J8|1|CONN PWR JACK 2.5X5.5MM HIGH CUR|PJ-202BH|
 |J9|1|CONN HEADER PH SIDE 2POS 2MM|455-1719-ND|
-|L1 L3 L4|3|FERRITE BEAD 30 OHM 0805 1LN|MH2029-300YCT-ND|
+|L1 L3 L4 L5|4|FERRITE BEAD 30 OHM 0805 1LN|MH2029-300YCT-ND|
 |L2|1|FIXED IND 1UH 3.3A 1226AS-H-1R0N|490-14149-1-ND|
 |LED1 LED2 LED3|3|LED AMBER DIFFUSED 0603 SMD|475-2712-1-ND|
 |R1|1|RES SMD 220 OHM 5% 1/10W 0603|311-220GRCT-ND|

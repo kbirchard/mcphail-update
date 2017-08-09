@@ -1996,8 +1996,6 @@ F 3 "" H 10825 7375 50  0000 C CNN
 $EndComp
 Text HLabel 13525 8325 2    50   Input ~ 0
 VDDANA
-Text Label 12425 8325 0    50   ~ 0
-VDDANA
 Wire Wire Line
 	9550 5850 9050 5850
 Text Label 9050 5850 0    50   ~ 0
@@ -2009,5 +2007,7 @@ VDDANA
 Wire Wire Line
 	10225 7025 9925 7025
 Text Label 9925 7025 0    50   ~ 0
+VDDANA
+Text Label 12425 8325 0    50   ~ 0
 VDDANA
 $EndSCHEMATC

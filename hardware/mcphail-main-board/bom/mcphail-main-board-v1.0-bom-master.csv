@@ -31,7 +31,7 @@ J6,1,CONN-HEADER-STRAIGHT-P2.54MM-2x03,Wickerlib,HEADER-FEMALE-6POS-TH-2x3-P0.1I
 J7,1,BREAKOUT-ADAFRUIT-FONA808-CELL-GPS,Wickerlib,ADAFRUIT-FONA-808-GPS,wickerlib,https://www.adafruit.com/products/2542,Adafruit,FONA808+GPS,Adafruit,2542,
 J8,1,CONN-BARREL-JACK-2.5x5.5MM-TH,Wickerlib,CONN-PWR-JACK-2.5X5.5MM-HIGH-CUR,wickerlib,http://www.cui.com/product/resource/digikeypdf/pj-202bh.pdf,CUI,PJ-202BH,Digikey,PJ-202BH,
 J9,1,CONN-JST-S2B-PH-SM4-TB,Wickerlib,HEADER-FEMALE-2POS-TH-1x02-JST-PH,wickerlib,http://www.jst-mfg.com/product/pdf/eng/ePH.pdf,JST,S2B-PH-K-S(LF)(SN,Digikey,455-1719-ND,
-L1 L3 L4,3,RLC-0805-SMD,Wickerlib,FERRITE-BEAD-30-OHM-0805-1LN,wickerlib,http://www.bourns.com/docs/Product-Datasheets/mh.pdf,Bourns,MH2029-300Y,Digikey,MH2029-300YCT-ND,
+L1 L3 L4 L5,4,RLC-0805-SMD,Wickerlib,FERRITE-BEAD-30-OHM-0805-1LN,wickerlib,http://www.bourns.com/docs/Product-Datasheets/mh.pdf,Bourns,MH2029-300Y,Digikey,MH2029-300YCT-ND,
 L2,1,1226AS-H-1R0N,Wickerlib,FIXED-IND-1UH-3.3A-1226AS-H-1R0N-SMD,wickerlib,http://www.toko.co.jp/products/pdf/inductors/dem2815c.pdf,Murata,1226AS-H-1R0N=P2,Digikey,490-14149-1-ND,
 LED1 LED2 LED3,3,LED-0603-SMD,Wickerlib,LED-AMBER-0603-SMT-L296-Q2R2,wickerlib,http://media.digikey.com/pdf/Data%20Sheets/Osram%20PDFs/LSLALOLY_296.pdf,OSRAM Opto,LA L296-Q2R2-1-Z,Digikey,475-2712-1-ND,
 R1,1,RLC-0603-SMD,Wickerlib,RES-220-5%-1/10W-0603,wickerlib,http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf,Yageo,RC0603JR-0722RL,Digikey,311-220GRCT-ND,
