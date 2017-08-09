@@ -35,6 +35,8 @@ Putting the electronics in acrylic separate from the insects so the ultrasonic i
 
 If all circuitry is on the board at the top, the IR emitters and photodiode detectors can be the only items in the trap with the insects and be connected by a minimum of cabling. 
 
+The boards will all be 0.063" (1.6mm) thick FR-4 with purple solder mask over bare copper and an ENIG (gold) finish.
+
 **Board dimensions**
 
 |Board|Dimensions|
@@ -91,11 +93,21 @@ The 2-layer board is routed using a split ground plane to separate the analog an
 
 If noise is still an issue, we may need need a 4-layer board (which doubles board cost). It's unclear if ENTOMATIC are actually getting and using all 14 bits. 
 
+Does 5V in the ENTOMATIC system vs 3.3V in our system make a difference? How?
+
 We need to review the ENTOMATIC calculations -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
 
 For power and noise control, we should turn off everything but the ADC when sampling. 
 
 [Discussion of cheap 16-bit ADC](http://www.avrfreaks.net/forum/cheap-16-bit-adc)
+
+### Software Approach
+
+We collect the value from the ADC in a variable and poll it at the desired rate. 
+
+Architecture could be a finite state machine.
+
+Next step is to go through and set up all the registers first to initialize serial comms, ADC, RTC, low power mode, the interrupts, and so on. Then, make sure we have libraries for accessing the SD, etc. This will not be an Arduino project, but an AVR GCC project. Need to get the environment set up and document it so someone else can reproduce the work in the same way we did.
 
 ### RTC
 
