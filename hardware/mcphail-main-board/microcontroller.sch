@@ -1,6 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:wickerlib
-LIBS:mcphail-main-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -722,7 +721,7 @@ Text HLabel 7875 5275 2    50   Input ~ 0
 A1
 Text HLabel 7875 5175 2    50   Input ~ 0
 A2
-Text HLabel 7850 4525 2    50   Input ~ 0
+Text HLabel 7850 3275 2    50   Input ~ 0
 ~PG
 Text Label 7725 5375 0    50   ~ 0
 A0
@@ -849,7 +848,7 @@ Text Label 1450 3750 0    50   ~ 0
 A1
 Text Label 1450 3850 0    50   ~ 0
 A2
-Text Label 7725 4525 0    50   ~ 0
+Text Label 7725 3275 0    50   ~ 0
 ~PG
 $Comp
 L FUSE-RESET-500MA-15V-MF-MSMF F1
@@ -968,7 +967,6 @@ F 3 "" H 3975 1200 50  0000 C CNN
 	1    3975 1200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7650 4625
 $Comp
 L CAP-CER-1UF-25V-X7R-0805 C34
 U 1 1 59821455
@@ -1175,7 +1173,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 5375 7875 5375
 Wire Wire Line
-	7850 4525 7650 4525
+	7850 3275 7650 3275
 Connection ~ 9050 2825
 Wire Wire Line
 	9050 1375 9050 2900
@@ -1654,7 +1652,6 @@ F 3 "" H 10850 1675 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7650 3175
-NoConn ~ 7650 3275
 NoConn ~ 7650 3375
 NoConn ~ 7650 3475
 NoConn ~ 7650 3575

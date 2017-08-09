@@ -37,6 +37,8 @@ If all circuitry is on the board at the top, the IR emitters and photodiode dete
 
 The boards will all be 0.063" (1.6mm) thick FR-4 with purple solder mask over bare copper and an ENIG (gold) finish.
 
+The tallest component on the board is C1 (330uF aluminum capacitor) at 0.5" tall.
+
 **Board dimensions**
 
 |Board|Dimensions|
@@ -160,29 +162,34 @@ The stencil costs $5 from OSH Stencils.
 <!--- assy start --->
 ## Complete Assembly and Cost Information
 
-The following layout is only to get a rough idea of how much area the parts would require if they were all on one side of one board. The area is 3 inches x 3 inches, or 9 square inches, and a set of three bare boards would cost $48.20 for three with a manufacturing turnaround of about ten days.
+Buying parts for a single main board is about $50. 
 
-Rough cost of parts for a single board is about $50. 
+Buying parts for three main boardS (minimum OS Park order) is about $100.
 
-The stencil from OSH Stencils costs $16.90. A tube of solder paste in the same package costs $14. 
+The stencil from OSH Stencils costs $12.09. A tube of solder paste in the same package costs $14. 
 
 Stencils are 3mil-thick polyamide (orange) film which is reusable.
 
-Total cost for one complete stack of three boards: $129
+Total cost for one complete stack (three boards): $143 ($143/stack)
 
-Assembling a further one complete stack of three boards: $93
+Total cost for three complete stacks (nine boards): $223 ($74/stack)
+
+Subsequent complete three stacks with parts: $200 ($67/stack)
 
 |Item|Cost|
 |----|----|
-|Emitter Board PCB|$3|
-|Emitter Parts|$13|
+|Emitter Board PCB each (min qty=3)|$2.30|
+|Emitter Parts qty=1|$4.50|
+|Emitter Parts qty=3|$13.50|
 |Emitter Stencil|$5|
-|Detector Board PCB|$3|
-|Detector Parts|$13|
+|Detector Board PCB each (min qty=3)|$2.30|
+|Detector Parts qty=1|$15|
+|Detector Parts qty=3|$35|
 |Detector Stencil|$5|
-|Main Board PCB|$16|
-|Main Board Parts|$45|
-|Main Board Stencil|$17|
+|Main Board PCB each (min qty=3)|$12|
+|Main Board Parts qty=1|$50|
+|Main Board Parts qty=3|$100|
+|Main Board Stencil|$12|
 |Leaded Solder|$14|
 
 <!--- assy end --->
@@ -206,9 +213,9 @@ Assembling a further one complete stack of three boards: $93
 |C15 C54 C55 C56 C6|5|CAP CER 22UF 25V X7R 1210|1276-3392-1-ND|
 |C16 C17 C19 C22|4|CAP CER 2.2UF 25V X7R 0805|1276-2953-1-ND|
 |C18|1|CAP CER 33PF 16V X7R 0603|478-6211-1-ND|
-|C20 C21 C23 C24 C43-C45|7|CAP CER 4.7UF 50V X7R 1206|587-2994-1-ND|
+|C20 C21 C23 C24 C43 C44 C45|7|CAP CER 4.7UF 50V X7R 1206|1276-2789-1-ND|
 |C25 C31 C46 C53|4|CAP CER 10UF 16V X7R 0805|1276-2872-1-ND|
-|C26 C30 C36-C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
+|C26 C30 C36 C37 C38 C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
 |C27|1|CAP CER 0.022UF 50V X7R 0603|1276-2004-1-ND|
 |C3|1|CAP CER 0.22UF 25V X7R 0603|1276-1111-1-ND|
 |C33 C35|2|CAP CER 22pF 50V NP0 0603|399-9031-1-ND|
