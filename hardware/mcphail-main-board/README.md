@@ -73,31 +73,43 @@ pins are necessary.
 
 ### Microcontroller
 
-Atmel AVR chips aren't going to have the ADC resolution we want. The paper calls for a 14-bit ADC.
+The reference papers call for a 14-bit ADC.
 
-Solution 1: Switch to the $6 MSP432 or a similar chip, could pick up a $14 dev board as well. This is a TI chip that requires CodeComposer Studio, newest version is CCSv6. It's Linux-compatible and I have a Windows machine just in case it's not.
+The Atmel AVR chips we initially considered (Atmega32u4, Atmega2560) had 10-bit ADC, which isn't enough. We chose the ATSAMD21G Cortex M0 with 12-bit ADC since it still can be programmed with a cheap programmer, doesn't require dedicated hardware, has built-in USB for programming and monitoring.
 
-The downside of the MSP432 is the $45 additional programmer we need to buy, getting set up with a new dev environment, etc. That's all doable but may not be necessary.  
+It is compatible with [adalink](https://github.com/adafruit/Adafruit_Adalink) and [avrdude](http://www.nongnu.org/avrdude/), which we already use for programming other boards. 
 
-Solution 2: Use a $6 16-bit ADS1115 which receives on two differential or four single channels (we could use the four) and outputs the result over I2C to the Atmega32u4. 
+We added a $6 16-bit ADS1115 which receives on two differential or four single channels (we could use the four) and outputs the result over I2C.
+ 
+Another possible solution would have been the $6 MSP432 or a similar chip, could pick up a $14 dev board as well. This is a TI chip that requires CodeComposer Studio, newest version is CCSv6. It's Linux-compatible and I have a Windows machine just in case it's not.
+
+The downside of the MSP432 is the $45 additional programmer we need to buy, getting set up with a new dev environment, etc.  
 
 ### ADC and Noise Notes
 
-I need to review their timing -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
+The 2-layer board is routed using a split ground plane to separate the analog and digital signals. Care was taken to provide clear analog return paths but the A0, A1, and A2 signals right at the microcontroller are next to the I2C signals and this may end up as a source of noise. 
 
-We may need need a 4-layer board, which doubles board cost. It's unclear if these guys are actually getting and using all 14 bits. Turning off everything but the ADC when sampling.
+If noise is still an issue, we may need need a 4-layer board (which doubles board cost). It's unclear if ENTOMATIC are actually getting and using all 14 bits. 
+
+We need to review the ENTOMATIC calculations -- seems like my back-of-envelope has 32ms, not 16ms as from their paper.
+
+For power and noise control, we should turn off everything but the ADC when sampling. 
 
 [Discussion of cheap 16-bit ADC](http://www.avrfreaks.net/forum/cheap-16-bit-adc)
 
 ### RTC
 
-The DS1307 real time clock is out of date, replaced it with a MCP7940N. Needs some adjustment to the circuitry and crystal to minimize ppm (frequency tolerance) to minimize time slipping, which could be up to a few minutes per month in the worst case. 
+The DS1307 real time clock is out of date and hard to find.
 
-TODO: quantify this deviation, discuss mitigation
+We used the MCP7940N with an external 32.768kHz external crystal, following the suggested PCB layout on [page 14 of the datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf).
+
+There is a discussion of digital trimming on page 29 to mitigate temperature and intrinsic clock issues. We can figure out the values in this digital trimming register by testing the physical board and calculating the the trim value with the equations on paeg 30. 
 
 ### Temperature
 
-TODO: find out how hot a plastic bottle hanging in the sun in Arizona in August could get.
+Kyle put a thermometer in the trap and measured the temperature inside over two days in direct sunlight. Both times the internal temp was 10 F degrees higher than the ambient air temp. (110/100F first day @ 5pm, 108/98F second day @ noon). 
+
+Prior to measuring, he left the thermometer in the trap for an hour, so that should be a reflection of what we'd see in the field. The combination of size and materials is keeping the temperature from getting much higher.
 
 ### Capacitors
 
@@ -113,22 +125,28 @@ C0G/NP0 means a capacitor is temperature-compensating (EIA Class 1) which varies
 
 Interestingly, the receiver part number [TEMD5080X01](https://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/TEMD5080X01/TEMD5080X01CT-ND/2747443?WT.srch=1&gclid=EAIaIQobChMI-f3J4Zml1QIV6wrTCh2xegkZEAAYAiAAEgK2kvD_BwE) does not have the same package as in the photos of the McPhail trap. These are $1.31 each at 25 and the design calls for ten of them. 
 
-They are good from -40C to 100C and are 5mm x 4.24mm. Ten of them would require a board about 3 inches long and about half an inch wide, or about $7 for a set of three from OSH Park.
+They are good from -40C to 100C and are 5mm x 4.24mm. 
 
-This is a $20 board. The stencil costs $5 from OSH Stencils.
+The board is 2.71x0.51 inches (68.76x12.88mm) and costs $7 from OSH Park for a set of three ($2.33 each). 
+
+The stencil costs $5 from OSH Stencils.
 
 ## Emitter Board
 
-Emitters are in the $2 range and the board will probably be the same size as the detector board. 
+The 940nm emitters are in the $2 range and the board will probably be the same size as the detector board. 
 
+The difference in frequency range is due to the ENTOMATIC folks optimizing for response time over exact frequency match, to save on power. They also drove the LEDs at the edge of the board at higher current to make sure the infrared intensity was uniform no matter where the bug flew through the IR field. 
+ 
 The diffuser needs more investigation.
 
-This is also likely a $20 board. The stencil costs $5 from OSH Stencils.
+The board is 2.71x0.51 inches (68.76x12.88mm) and costs $7 from OSH Park ($2.33 each).
+
+The stencil costs $5 from OSH Stencils.
 
 \pagebreak
 
 <!--- assy start --->
-## Main Board Assembly Information
+## Complete Assembly and Cost Information
 
 The following layout is only to get a rough idea of how much area the parts would require if they were all on one side of one board. The area is 3 inches x 3 inches, or 9 square inches, and a set of three bare boards would cost $48.20 for three with a manufacturing turnaround of about ten days.
 
@@ -176,9 +194,9 @@ Assembling a further one complete stack of three boards: $93
 |C15 C54 C55 C56 C6|5|CAP CER 22UF 25V X7R 1210|1276-3392-1-ND|
 |C16 C17 C19 C22|4|CAP CER 2.2UF 25V X7R 0805|1276-2953-1-ND|
 |C18|1|CAP CER 33PF 16V X7R 0603|478-6211-1-ND|
-|C20 C21 C23 C24 C43 C44 C45|7|CAP CER 4.7UF 50V X7R 1206|587-2994-1-ND|
+|C20 C21 C23 C24 C43-C45|7|CAP CER 4.7UF 50V X7R 1206|587-2994-1-ND|
 |C25 C31 C46 C53|4|CAP CER 10UF 16V X7R 0805|1276-2872-1-ND|
-|C26 C30 C36 C37 C38 C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
+|C26 C30 C36-C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
 |C27|1|CAP CER 0.022UF 50V X7R 0603|1276-2004-1-ND|
 |C3|1|CAP CER 0.22UF 25V X7R 0603|1276-1111-1-ND|
 |C33 C35|2|CAP CER 22pF 50V NP0 0603|399-9031-1-ND|
