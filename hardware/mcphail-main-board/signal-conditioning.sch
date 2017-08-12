@@ -1,5 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:wickerlib
+LIBS:mcphail-main-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLedger 17000 11000
@@ -1357,7 +1358,7 @@ Wire Wire Line
 	13125 7750 13125 8525
 Connection ~ 13025 8425
 Wire Wire Line
-	13025 7650 13025 8425
+	13025 8425 13025 7650
 Connection ~ 12925 8325
 Wire Wire Line
 	12925 7550 12925 8325
@@ -2009,4 +2010,22 @@ F 8 "1276-2789-1-ND" H 10550 2500 50  0001 C CIN "S1_PN"
 	1    8775 3925
 	0    1    1    0   
 $EndComp
+Text Notes 2125 4175 0    50   ~ 0
+Vout = -Idiode * Rf\nVout = -10uA * 64.9kohm \nVout = -0.649V
+Text Notes 750  1800 0    50   ~ 0
+https://electronics.stackexchange.com/questions/36086/does-this-photodiode-circuit-work
+Text Notes 3925 4325 0    50   ~ 0
+5V * (100K / 200K) = 2.5V
+Wire Notes Line
+	4025 4375 3925 4500
+Wire Notes Line
+	3925 4500 3925 4450
+Wire Notes Line
+	3925 4500 3975 4500
+Text Notes 4700 4575 0    50   ~ 0
+2.5V
+Text Notes 5825 4750 0    50   ~ 0
+VREF = 2.5V
+Text Notes 3400 3200 0    50   ~ 0
+130 Hz near -0.649V
 $EndSCHEMATC

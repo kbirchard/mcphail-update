@@ -3,7 +3,7 @@
     "bom_dir":"bom",
     "company":"Wickerbox Electronics",
     "date_create":"18 Jul 2017",
-    "date_update":"9 Aug 2017",
+    "date_update":"12 Aug 2017",
     "description":"Collect, analyze, and report back the environmental data.",
     "email":"jenner@wickerbox.net",
     "gerbers_dir":"gerbers",
@@ -16,7 +16,7 @@
     "title":"McPhail Trap Main Board",
     "version":"1.0",
     "website":"http://wickerbox.net",
-    "width_assembly_png":"70",
+    "width_assembly_png":"90",
     "width_other_png":"60",
     "width_preview_png":"90",
     "width_schematic_png":"90"
