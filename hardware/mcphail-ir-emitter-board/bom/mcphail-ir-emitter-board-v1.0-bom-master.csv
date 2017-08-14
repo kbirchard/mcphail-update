@@ -1,3 +1,3 @@
-Ref,Qty,Footprint,Footprint Library,Symbol,Symbol Library,Datasheet,MF_Name,MF_PN,S1_Name,S1_PN,Type
-J1,1,CONN-HEADER-STRAIGHT-P2.54MM-1x02,Wickerlib,HEADER-MALE-2POS-TH-1x02-P0.1IN,wickerlib,https://cdn.harwin.com/pdfs/60page140.pdf,Harwin,M20-9990246,Digikey,952-2262-ND,
-LED1 LED10 LED2 LED3 LED4 LED5 LED6 LED7 LED8 LED9,10,LED-D5MM-2PIN-SH4356,Wickerlib,LED-IR-850NM-2PIN-TH-SFH4356,wickerlib,http://www.mouser.com/ds/2/311/SFH%204356,%20Lead%20(Pb%20Free%20Product%20-%20RoHS%20Compliant-532102.pdf,OSRAM Opto,SFH 4356,Mouser,720-SFH4356,
+Ref,Qty1,Qty3,Footprint,Footprint Library,Symbol,Symbol Library,Datasheet,MF_Name,MF_PN,S1_Name,S1_PN,Type
+J1,1,3,CONN-HEADER-STRAIGHT-P2.54MM-1x02,Wickerlib,HEADER-MALE-2POS-TH-1x02-P0.1IN,wickerlib,https://cdn.harwin.com/pdfs/60page140.pdf,Harwin,M20-9990246,Digikey,952-2262-ND,
+LED1 LED10 LED2 LED3 LED4 LED5 LED6 LED7 LED8 LED9,10,30,LED-D5MM-2PIN-SH4356,Wickerlib,LED-IR-850NM-2PIN-TH-SFH4356,wickerlib,http://www.mouser.com/ds/2/311/SFH%204356,%20Lead%20(Pb%20Free%20Product%20-%20RoHS%20Compliant-532102.pdf,OSRAM Opto,SFH 4356,Mouser,720-SFH4356,
