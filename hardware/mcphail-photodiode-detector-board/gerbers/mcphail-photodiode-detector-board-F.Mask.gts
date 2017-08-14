@@ -1,10 +1,10 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,4.0.5-e0-6337~49~ubuntu16.04.1*%
-%TF.CreationDate,2017-08-14T10:46:21-07:00*%
+%TF.CreationDate,2017-08-14T14:23:48-07:00*%
 %TF.ProjectId,mcphail-photodiode-detector-board,6D63706861696C2D70686F746F64696F,1.0*%
 %TF.FileFunction,Soldermask,Top*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.5-e0-6337~49~ubuntu16.04.1) date Mon Aug 14 10:46:21 2017*
+G04 Created by KiCad (PCBNEW 4.0.5-e0-6337~49~ubuntu16.04.1) date Mon Aug 14 14:23:48 2017*
 %MOMM*%
 %LPD*%
 G01*
