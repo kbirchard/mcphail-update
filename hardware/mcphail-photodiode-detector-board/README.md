@@ -2,7 +2,7 @@
 # McPhail IR Detector Board v1.0
 Part of the McPhail Trap Design
 
-Updated: 6 Aug 2017
+- Updated: 14 Aug 2017
 
 - Author: Jenner Hanni
 - Website: http://wickerbox.net
