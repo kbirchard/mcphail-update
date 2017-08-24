@@ -2,7 +2,7 @@
 # McPhail Trap Main Board v1.0
 Collect, analyze, and report back environmental data.
 
-- Updated: 14 Aug 2017
+- Updated: 12 Aug 2017
 - Author: Jenner Hanni
 - Website: http://wickerbox.net
 - Company: Wickerbox Electronics
@@ -159,6 +159,37 @@ The stencil costs $5 from OSH Stencils.
 
 \pagebreak
 
+## ATSAMD21G Pins
+
+|ATSAMD21G Pin|Function|
+|25|D7 CS|
+|40|~RESET|
+|14|SCLK|
+|19|MOSI|
+|15|MISO|
+|13|D4 CS|
+|33|D-|
+|34|D+|
+|26|FONA_NS|
+|27|FONA_PS|
+|28|FONA_RI|
+|29|FONA_RTS|
+|30|FONA_TX|
+|31|FONA_RX|
+|32|FONA_RST|
+|41|~PG|
+|20|RTC_MFP|
+|21|SDA|
+|22|SCL|
+|37|EEPROM_ADD2|
+|38|EEPROM_ADD1|
+|39|EEPROM_ADD0|
+|10|A2|
+|11|A1|
+|12|A0|
+|45|SWCLK|
+|46|SWDIO|
+
 <!--- assy start --->
 ## Complete Assembly and Cost Information
 
@@ -213,9 +244,9 @@ Subsequent complete three stacks with parts: $200 ($67/stack)
 |C15 C54 C55 C56 C6|5|CAP CER 22UF 25V X7R 1210|1276-3392-1-ND|
 |C16 C17 C19 C22|4|CAP CER 2.2UF 25V X7R 0805|1276-2953-1-ND|
 |C18|1|CAP CER 33PF 16V X7R 0603|478-6211-1-ND|
-|C20 C21 C23 C24 C43 C44 C45|7|CAP CER 4.7UF 50V X7R 1206|1276-2789-1-ND|
+|C20 C21 C23 C24 C43-C45|7|CAP CER 4.7UF 50V X7R 1206|1276-2789-1-ND|
 |C25 C31 C46 C53|4|CAP CER 10UF 16V X7R 0805|1276-2872-1-ND|
-|C26 C30 C36 C37 C38 C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
+|C26 C30 C36-C39 C47 C51 C52|9|CAP CER 0.1UF 100V X7R 0603|490-3285-1-ND|
 |C27|1|CAP CER 0.022UF 50V X7R 0603|1276-2004-1-ND|
 |C3|1|CAP CER 0.22UF 25V X7R 0603|1276-1111-1-ND|
 |C33 C35|2|CAP CER 22pF 50V NP0 0603|399-9031-1-ND|
