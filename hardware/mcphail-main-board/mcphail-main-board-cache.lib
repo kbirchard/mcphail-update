@@ -271,7 +271,7 @@ ENDDEF
 DEF CAP-CER-1UF-25V-X7R-0805 C 0 40 N N 1 F N
 F0 "C" 100 50 50 H V L CNN
 F1 "CAP-CER-1UF-25V-X7R-0805" 100 -50 50 H V L CNN
-F2 "Wickerlib:RLC-0805" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0805-SMD" 0 -350 50 H I C CIN
 F3 "http://www.samsungsem.com/kr/front/downloadcms.do?path=/kr/support/product-search/mlcc/__icsFiles/afieldfile/2014/11/05&fileName=C_CL21B104KACNNNC.pdf" 0 0 5 H I C CNN
 F4 "CAP CER 1UF 25V X7R 0805" 0 -350 50 H I C CIN "Description"
 F5 "Samsung" 0 -350 50 H I C CIN "MF_Name"
@@ -291,7 +291,7 @@ ENDDEF
 DEF CAP-CER-2.2UF-25V-X7R-0805 C 0 40 N N 1 F N
 F0 "C" 100 50 50 H V L CNN
 F1 "CAP-CER-2.2UF-25V-X7R-0805" 100 -50 50 H V L CNN
-F2 "Wickerlib:RLC-1210-SMD" 625 -400 50 H I C CIN
+F2 "Wickerlib:RLC-0805-SMD" 625 -400 50 H I C CIN
 F3 "http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21B225KAFNFNE_Spec.pdf" 350 -225 10 H I C CNN
 F4 "CAP CER 2.2UF 25V X7R 0805" 675 -325 50 H I C CIN "Description"
 F5 "Samsung" 200 -500 50 H I C CIN "MF_Name"
@@ -542,7 +542,7 @@ ENDDEF
 DEF CONN-USB-MICRO-B-10118193 J 0 40 Y Y 1 F N
 F0 "J" -150 350 50 H V L CNN
 F1 "CONN-USB-MICRO-B-10118193" -150 -350 50 H V L CNN
-F2 "USB-10118193" 0 -350 50 H I C CIN
+F2 "Wickerlib:CONN-USB-MICRO-B-AMPHENOL-10118193-0001LF" 0 -350 50 H I C CIN
 F3 "http://portal.fciconnect.com/Comergent//fci/drawing/10118193.pdf" -525 25 5 V I C CNN
 F4 "USB MICRO-B RECEPTACLE 5PIN SMT R/A STUDS" 0 -350 50 H I C CIN "Description"
 F5 "Amphenol" 0 -350 50 H I C CIN "MF_Name"
@@ -605,7 +605,7 @@ ENDDEF
 DEF DIODE-SCHOTTKY-20V-1A-SS12-SMA D 0 40 N N 1 F N
 F0 "D" 50 50 50 H V L CNN
 F1 "DIODE-SCHOTTKY-20V-1A-SS12-SMA" 50 -50 50 H V L CNN
-F2 "Wickerlib:DIODE-SMA" 0 -350 50 H I C CIN
+F2 "Wickerlib:DIODE-SMA-DO214AC" 0 -350 50 H I C CIN
 F3 "http://www.vishay.com/docs/88746/ss12.pdf" 0 0 5 V I C CNN
 F4 "DIODE SCHOTTKY 20V 1A SMA" 0 -350 50 H I C CIN "Description"
 F5 "Vishay" 0 -350 50 H I C CIN "MF_Name"
@@ -706,7 +706,7 @@ ENDDEF
 DEF FUSE-RESET-500MA-15V-MF-MSMF F 0 40 N N 1 F N
 F0 "F" 50 50 50 H V L CNN
 F1 "FUSE-RESET-500MA-15V-MF-MSMF" 50 -50 50 H V L CNN
-F2 "Wickerlib:RLC-1812" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-1812-SMD" 0 -350 50 H I C CIN
 F3 "http://www.bourns.com/docs/Product-Datasheets/mfmsmf.pdf" 0 0 5 H I C CNN
 F4 "RESETTABLE FUSE 500mA 15V MF-MSMF" 0 -350 50 H I C CIN "Description"
 F5 "Bourns" 0 -350 50 H I C CIN "MF_Name"
@@ -789,7 +789,7 @@ ENDDEF
 DEF HEADER-MALE-2POS-TH-1x02-P0.1IN J 0 40 N N 1 F N
 F0 "J" -100 150 50 H V L CNN
 F1 "HEADER-MALE-2POS-TH-1x02-P0.1IN" -100 -150 50 H V L CNN
-F2 "CONN-1x02-2.54MM-TH" 0 -350 50 H I C CIN
+F2 "Wickerlib:CONN-HEADER-STRAIGHT-P2.54MM-2x20" 0 -350 50 H I C CIN
 F3 "https://cdn.harwin.com/pdfs/60page140.pdf" -50 0 5 H I C CNN
 F4 "HEADER MALE 2POS TH 1x02 0.1IN" 0 -350 50 H I C CIN "Description"
 F5 "Harwin" 0 -350 50 H I C CIN "MF_Name"
@@ -929,7 +929,7 @@ ENDDEF
 DEF IC-MCU-ATSAMD21G18A-TQFP48-CUSTOM1 U 0 40 Y Y 1 F N
 F0 "U" -900 1600 50 H V C CNN
 F1 "IC-MCU-ATSAMD21G18A-TQFP48-CUSTOM1" -950 -2200 50 H V L CNN
-F2 "Wickerlib:UNDEFINED" -150 50 50 H I C CNN
+F2 "Wickerlib:TQFP-48_7x7mm_Pitch0.5mm" -150 50 50 H I C CNN
 F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en590209" -50 -50 50 V I C CNN
 F4 "IC MCU 32BIT 256KB FLASH ATSAMD21G 48TQFP" 0 -350 50 H I C CIN "Description"
 F5 "Atmel" 0 -350 50 H I C CIN "MF_Name"
@@ -1173,7 +1173,7 @@ ENDDEF
 DEF RES-0.0-JUMPER-1/8W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-0.0-JUMPER-1/8W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 0.0 OHM JUMPER 1/8W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Vishay" 0 -350 50 H I C CIN "MF_Name"
@@ -1192,7 +1192,7 @@ ENDDEF
 DEF RES-1.02K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-1.02K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 470 OHM 5% 1/4W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Yageo" 0 -350 50 H I C CIN "MF_Name"
@@ -1211,7 +1211,7 @@ ENDDEF
 DEF RES-1.43K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-1.43K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 1.43K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1230,7 +1230,7 @@ ENDDEF
 DEF RES-1.87K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-1.87K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 1.87K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1249,7 +1249,7 @@ ENDDEF
 DEF RES-10-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-10-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF10R0V+7+WW" 0 0 5 H I C CNN
 F4 "RES SMD 10 OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1268,7 +1268,7 @@ ENDDEF
 DEF RES-100K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-100K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 100K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Stackpole" 0 -350 50 H I C CIN "MF_Name"
@@ -1287,7 +1287,7 @@ ENDDEF
 DEF RES-10K-1%-1/8W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-10K-1%-1/8W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.seielect.com/catalog/SEI-RNCP.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 10K OHM 1% 1/8W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Stackpole" 0 -350 50 H I C CIN "MF_Name"
@@ -1306,7 +1306,7 @@ ENDDEF
 DEF RES-111K-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-111K-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 111K OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1344,7 +1344,7 @@ ENDDEF
 DEF RES-1M-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-1M-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 1M OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1363,7 +1363,7 @@ ENDDEF
 DEF RES-2.26K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-2.26K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 2.26K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Yageo" 0 -350 50 H I C CIN "MF_Name"
@@ -1382,7 +1382,7 @@ ENDDEF
 DEF RES-2.2K-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-2.2K-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ222V+7+WW" 0 0 5 H I C CNN
 F4 "RES SMD 2.2K OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1401,7 +1401,7 @@ ENDDEF
 DEF RES-2.94K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-2.94K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 2.94K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1420,7 +1420,7 @@ ENDDEF
 DEF RES-220-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-220-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 220 OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Yageo" 0 -350 50 H I C CIN "MF_Name"
@@ -1439,7 +1439,7 @@ ENDDEF
 DEF RES-220K-5%-1/8W-0805 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-220K-5%-1/8W-0805" 50 -50 50 H V L CNN
-F2 "RLC-0805-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0805-SMD" 0 -350 50 H I C CIN
 F3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ6GEYJ224V+7+WW" 0 0 5 H I C CNN
 F4 "RES SMD 220K OHM 5% 1/8W 0805" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1458,7 +1458,7 @@ ENDDEF
 DEF RES-22K-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-22K-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ222V+7+WW" 0 0 5 H I C CNN
 F4 "RES SMD 22K OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1477,7 +1477,7 @@ ENDDEF
 DEF RES-2K-1%-1/8W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-2K-1%-1/8W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.seielect.com/catalog/SEI-RNCP.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 2K OHM 1% 1/8W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Stackpole" 0 -350 50 H I C CIN "MF_Name"
@@ -1496,7 +1496,7 @@ ENDDEF
 DEF RES-3.83K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-3.83K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 3.83K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1515,7 +1515,7 @@ ENDDEF
 DEF RES-330-5%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-330-5%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 330 OHM 5% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Yageo" 0 -350 50 H I C CIN "MF_Name"
@@ -1534,7 +1534,7 @@ ENDDEF
 DEF RES-4.32K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-4.32K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 4.32K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1553,7 +1553,7 @@ ENDDEF
 DEF RES-470-5%-1/4W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-470-5%-1/4W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/esr.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 470 OHM 5% 1/4W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Rohm Semi" 0 -350 50 H I C CIN "MF_Name"
@@ -1572,7 +1572,7 @@ ENDDEF
 DEF RES-64.9K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-64.9K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF6492V+7+WW" 0 0 5 H I C CNN
 F4 "RES SMD 64.9K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1591,7 +1591,7 @@ ENDDEF
 DEF RES-68-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-68-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 68 OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1610,7 +1610,7 @@ ENDDEF
 DEF RES-732-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-732-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 732 OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1629,7 +1629,7 @@ ENDDEF
 DEF RES-91K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-91K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 91K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
@@ -1648,7 +1648,7 @@ ENDDEF
 DEF RES-97.6K-1%-1/10W-0603 R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V L CNN
 F1 "RES-97.6K-1%-1/10W-0603" 50 -50 50 H V L CNN
-F2 "RLC-0603-SMD" 0 -350 50 H I C CIN
+F2 "Wickerlib:RLC-0603-SMD" 0 -350 50 H I C CIN
 F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C298.pdf" 0 0 5 H I C CNN
 F4 "RES SMD 97.6K OHM 1% 1/10W 0603" 0 -350 50 H I C CIN "Description"
 F5 "Panasonic" 0 -350 50 H I C CIN "MF_Name"
