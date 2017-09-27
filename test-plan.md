@@ -16,7 +16,7 @@
 
 - Commit to a toolchain (Arduino or Atmel Studio 7) based on the libraries and development process.
 
-- Work out the time-independent code for sampling.
+- Work out the actual sampling/acquisition code.
 
 - Based on the initial analog circuitry tests without insects, review amplifiers and make any changes. 
 
