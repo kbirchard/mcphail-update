@@ -1,5 +1,5 @@
 <!--- start title --->
-# McPhail Trap Main Board v1.0
+# McPhail Trap Main Board v1.1
 Collect, analyze, and report back environmental data.
 
 - Updated: 12 Aug 2017
