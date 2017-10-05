@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/wicker/proj/McPhail-Trap/hardware/mcphail-zero-analog-shield/mcphail-zero-analog-shield.sch)
-    (date "Wed 04 Oct 2017 02:27:22 PM PDT")
+    (date "Wed 04 Oct 2017 06:33:42 PM PDT")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -21,10 +21,10 @@
       (datasheet https://www.adafruit.com/products/3033)
       (fields
         (field (name MF_Name) Arduino)
-        (field (name MF_PN) "UNO R3")
+        (field (name MF_PN) "ARDUINO ZERO")
         (field (name S1_Name) Adafruit)
-        (field (name S1_PN) 50)
-        (field (name Description) "ARDUINO 101 SHIELD"))
+        (field (name S1_PN) 2843)
+        (field (name Description) "ARDUINO ZERO SHIELD"))
       (libsource (lib mcphail-zero-analog-shield-cache) (part ARDUINO-101-SHIELD))
       (sheetpath (names /) (tstamps /))
       (tstamp 572986CB))

@@ -1,18 +1,3 @@
-<!--- start title --->
-# McPhail Zero Analog Shield v1.0
-Arduino Zero shield for the analog signal processing McPhail circuitry
-
-- Updated: 4 Oct 2017
-
-- Author: Jenner Hanni
-- Website: http://wickerbox.net
-- Company: Wickerbox Electronics
-- License: CERN Open Hardware License v1.2
-<!--- end title --->
-
-<!--- bom start --->
-### Bill of Materials
-
 |Ref|Qty|Description|Digikey PN|
 |---|---|-----------|------|
 |C1|1|CAP ALUM 330UF 20% 16V RADIAL|732-8798-1-ND|
@@ -63,13 +48,4 @@ Arduino Zero shield for the analog signal processing McPhail circuitry
 |---|---|-----------|------|
 |U5|1|ARDUINO ZERO SHIELD|2843|
 
-
-<!--- bom end --->
-<!--- assy start --->
-### Assembly Info for Quoting
-
-<!--- assy end --->
-![Assembly Diagram](assembly.png)
-
-![Gerber Preview](preview.png)
 
